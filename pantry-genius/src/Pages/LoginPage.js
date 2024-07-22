@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import './App.css';
-import logo from './Vector.svg';
-import appfeatures from './app-features.svg';
+import '../App.css';
+import '../StyleSheets/LoginPage.css';
+import logo from '../Assets/Vector.svg';
+import appfeatures from '../Assets/app-features.svg';
 
 const LoginPage = () => {
 

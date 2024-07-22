@@ -1,0 +1,221 @@
+body {
+    font-family: "Source Serif 4", serif;
+  }
+  
+  .pantry-page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #EFDAC1;
+  }
+  
+  .header {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: 5px;
+    margin-top: 2rem;
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+  }
+  
+  .header-title {
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    background: #3A4D57;
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .title-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #D9C1A0;
+    border-radius: 30px;
+    flex-grow: 1;
+    padding: 3px 0;
+  }
+  
+  .header-classification {
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 12px;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 1.25rem;
+    font-weight: 500;
+  }
+  
+  .title {
+    font-family: 'Pacifico', cursive;
+    font-size: 24px;
+    margin: 0;
+    text-align: center;
+    font-weight: 100;
+  }
+  
+  .pantry-logo {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    cursor: pointer;
+    height: 45px;
+    width: auto;
+  }
+  
+  .user-icon {
+    font-size: 30px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .profile-section {
+    display: flex;
+    justify-content: center;
+    margin: 5px 0;
+    margin-bottom: 10px;
+  }
+  
+  .profile-icon {
+    width: 120px;
+    height: 120px;
+    background-color: #3A4D57;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 110px;
+  }
+  
+  .search-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px 0px;
+    width: 100%;
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 500px;
+    margin: 5px auto;
+  }
+  
+  .search-icon, .barcode-icon {
+    font-size: 24px;
+    color: #a9a9a9;
+    margin: 0 10px;
+  }
+  
+  .search-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #a9a9a9;
+  }
+  
+  .search-input::placeholder {
+    color: #a9a9a9;
+  }
+  
+  .tags {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    max-width: 500px;
+  }
+  
+  .tag {
+    background-color: #ccc;
+    color: #333;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 0 1px;
+    font-size: 14px;
+  }
+  
+  .tag.fresh { background-color: #a8e6cf; }
+  .tag.frozen { background-color: #dcedc1; }
+  .tag.gmo { background-color: #ff8b94; }
+  .tag.organic { background-color: #ffaaa5; }
+  
+  .category-section {
+    flex: 1;
+    padding: 0 20px;
+    overflow-y: auto;
+    margin-top: 1rem;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .category {
+    padding-bottom: 5rem;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    align-items: center;
+    position: relative;
+    
+
+  }
+  
+  .category-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  
+  .category-caret {
+    font-size: 1.5rem;
+    color: #333;
+    align-self: flex-end;
+    position: absolute;
+    right: 0;
+  }
+  
+  .footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    background-color: #f8e2cc;
+    border-top: 1px solid #ccc;
+  }
+  
+  .footer-icon {
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .add-button {
+    width: 50px;
+    height: 50px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+  }
