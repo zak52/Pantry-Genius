@@ -1,34 +1,85 @@
-.pantry-sub-page {
+body {
+    font-family: "Source Serif 4", serif;
+  }
+  
+  .pantry-sub-page {
     display: flex;
     flex-direction: column;
     height: 100vh;
     background-color: #EFDAC1;
   }
-
-  .pantry-sub-page .header{
-    margin-top: 10px;
-  }
   
   .back-button {
+    background: none;
     border: none;
-    color: white;
+    color: #3A4D57;
     font-size: 24px;
     cursor: pointer;
     display: flex;
     align-items: center;
     margin: 10px;
-    background-color: #3A4D57;
-    max-width: fit-content;
-    border-radius: 20px;
   }
   
-  .sub-title {
-    flex-grow: 1;
+  .header {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     text-align: center;
+    margin: 5px;
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+  }
+  
+  .header-title {
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    background: #3A4D57;
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .title-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #D9C1A0;
+    border-radius: 30px;
+    flex-grow: 1;
+    padding: 3px 0;
+  }
+  
+  .header-classification {
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 12px;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 1.25rem;
+    font-weight: 500;
+  }
+  
+  .title {
+    font-family: 'Pacifico', cursive;
     font-size: 24px;
     margin: 0;
+    text-align: center;
     font-weight: 100;
-    font-family: 'Pacifico', cursive;
+  }
+  
+  .pantry-logo {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    cursor: pointer;
+    height: 45px;
+    width: auto;
   }
   
   .sub-content {
@@ -46,4 +97,18 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     width: calc(33% - 40px); /* Adjust based on the number of columns you want */
     text-align: center;
+  }
+  
+  .no-results {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    color: #999;
+  }
+
+  .search-results{
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    color: #999;
   }

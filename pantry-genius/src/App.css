@@ -73,3 +73,9 @@ body {
 .settings-icon:hover{
   cursor: pointer;
 }
+
+.nav-bar{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
