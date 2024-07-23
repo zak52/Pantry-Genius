@@ -19,3 +19,57 @@ body {
   text-align: center;
 }
 
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+  background-color: #D9C1A0;
+  border-top: 1px solid #ccc;
+}
+
+.footer-icon {
+  font-size: 36px;
+  cursor: pointer;
+}
+
+.add-button {
+  width: 70px;
+  height: 70px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  font-size: 80px;
+  cursor: pointer;
+  transform: translateY(-55%);
+}
+
+.grocery-icon,
+.recipe-icon,
+.shopping-list-icon,
+.settings-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  color: #333;
+}
+
+.recipe-icon{
+  margin-right: 20px;
+}
+.shopping-list-icon{
+  margin-left: 20px;
+}
+
+.grocery-icon:hover,
+.recipe-icon:hover,
+.shopping-list-icon:hover,
+.settings-icon:hover{
+  cursor: pointer;
+}

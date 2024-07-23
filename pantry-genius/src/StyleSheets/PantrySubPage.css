@@ -1,0 +1,49 @@
+.pantry-sub-page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #EFDAC1;
+  }
+
+  .pantry-sub-page .header{
+    margin-top: 10px;
+  }
+  
+  .back-button {
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    background-color: #3A4D57;
+    max-width: fit-content;
+    border-radius: 20px;
+  }
+  
+  .sub-title {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 24px;
+    margin: 0;
+    font-weight: 100;
+    font-family: 'Pacifico', cursive;
+  }
+  
+  .sub-content {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .item {
+    background: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(33% - 40px); /* Adjust based on the number of columns you want */
+    text-align: center;
+  }
