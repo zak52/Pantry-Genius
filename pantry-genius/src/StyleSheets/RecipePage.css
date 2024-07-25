@@ -1,0 +1,160 @@
+body {
+    font-family: "Source Serif 4", serif;
+}
+
+.my-recipe-page {
+    display: flex;
+    flex-direction: column;
+    background-color: #EFDAC1;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.header-title {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    background-color: #EFDAC1;
+    width: 100%;
+}
+
+.chef-logo {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+.title {
+    font-size: 50px;
+    font-family: 'Pacifico', cursive;
+    margin: 0;
+}
+
+.search-section {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 800px; /* Increase max-width as needed */
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.search-icon {
+    font-size: 24px;
+    color: #a9a9a9;
+    margin-right: 10px;
+}
+
+.search-input {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    width: 100%;
+    color: #333;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+}
+
+.in-stock-toggle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.toggle-icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.toggle-text {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.filter-icon {
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    margin: 0px 15px;
+    overflow-x: scroll;
+    margin-top: -25px;
+  }
+  
+.category {
+    background-color: #EFBBA1;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin: 2px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.category.active, .category:hover {
+    background-color: #3A4D57;
+    color: white;
+}
+
+.recipes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 110px;
+}
+
+.recipe-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 45%;
+    margin: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.recipe-image {
+    width: 100%;
+    height: auto;
+}
+
+.recipe-details {
+    padding: 10px;
+}
+
+.recipe-name {
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+}
+
+.recipe-time {
+    font-size: 14px;
+    color: #777;
+}

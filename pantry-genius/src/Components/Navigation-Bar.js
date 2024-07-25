@@ -4,7 +4,7 @@ import { FaShoppingBasket, FaBook, FaShoppingCart, FaCog, FaCaretRight, FaSearch
 
 const NavigationBar = () => {
     return (
-        <div>
+        <div className="navigation-bar">
             <footer className="footer">
                 <div className="grocery-icon">
                     <FaShoppingBasket className="footer-icon" />

@@ -5,6 +5,7 @@
   
 }
 
+
 body {
   margin: 0;
   padding: 0;
@@ -26,6 +27,12 @@ body {
   padding: 10px 0;
   background-color: #D9C1A0;
   border-top: 1px solid #ccc;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; /* Ensure it stays above other elements */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Optional: Adds a slight shadow for separation */
 }
 
 .footer-icon {
@@ -72,10 +79,4 @@ body {
 .shopping-list-icon:hover,
 .settings-icon:hover{
   cursor: pointer;
-}
-
-.nav-bar{
-  position: absolute;
-  bottom: 0;
-  width: 100%;
 }

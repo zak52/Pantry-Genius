@@ -125,9 +125,6 @@ const PantryPage = () => {
               <FaCaretRight className="category-caret" />
             </div>
           </div>
-          <div className='nav-bar'>
-            <NavigationBar />
-          </div>
         </>
       )}
     </div>

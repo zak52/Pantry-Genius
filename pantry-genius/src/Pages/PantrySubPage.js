@@ -27,9 +27,6 @@ const PantrySubPage = ({ onBack, items, searchTerm, category }) => {
           <div className="no-results">No items found</div>
         )}
       </div>
-      <div className='nav-bar'>
-        <NavigationBar />
-      </div>
     </div>
   );
 };
