@@ -1,0 +1,114 @@
+body {
+    font-family: "Source Serif 4", serif;
+  }
+  
+.shopping-list-page {
+    display: flex;
+    flex-direction: column;
+    background-color: #EFDAC1;
+  }
+  
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+.header-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+.app-logo {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+  }
+  
+.title {
+    font-size: 36px;
+    font-family: 'Pacifico', cursive;
+  }
+  
+.search-section {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+  }
+  
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin: 0 5px;
+  }
+  
+.search-icon {
+    font-size: 24px;
+    color: #a9a9a9;
+    margin-right: 10px;
+  }
+  
+.search-input {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    width: 100%;
+    color: #333;
+  }
+  
+.add-icon {
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+.shopping-list{
+    margin: 10px auto;
+    width: 90%;
+    max-height: 450px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.shopping-list .shopping-item{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    align-content: center;
+    text-align: center;
+    margin: 10px auto;
+    padding: 10px 0;
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+}
+
+.shopping-list .shopping-item span{
+    font-size: 30px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.barcode-section {
+    align-self: center;
+}
+  
+.barcode-button {
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: black;
+    margin-top: 5px;
+    justify-content: center;
+    align-self: center;
+    align-content: center;
+    align-items: center;
+}

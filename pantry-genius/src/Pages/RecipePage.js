@@ -66,14 +66,13 @@ const mockRecipes = [
       'Add the bell pepper and cook for another 5 minutes.',
       'Serve over cooked pasta and enjoy!'
     ]},
-  // Add more mock recipes as needed
 ];
 
 const RecipePage = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [inStockOnly, setInStockOnly] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState('');
-  const [selectedRecipe, setSelectedRecipe] = useState(null); // State for the selected recipe
+  const [selectedRecipe, setSelectedRecipe] = useState(null);
 
   const handleSearchChange = (e) => {
     setSearchTerm(e.target.value);
@@ -88,11 +87,11 @@ const RecipePage = () => {
   };
 
   const handleRecipeClick = (recipe) => {
-    setSelectedRecipe(recipe); // Set the selected recipe
+    setSelectedRecipe(recipe);
   };
 
   const handleBack = () => {
-    setSelectedRecipe(null); // Go back to the recipe list
+    setSelectedRecipe(null);
   };
 
   return (

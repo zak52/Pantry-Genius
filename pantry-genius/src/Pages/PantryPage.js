@@ -13,7 +13,6 @@ const mockItems = [
   { id: 4, name: 'Flour', tags: ['Baking'] },
   { id: 5, name: 'Cheese', tags: ['Dairy', 'Fresh'] },
   { id: 6, name: 'Frozen Peas', tags: ['Fruits & Vegetables', 'Frozen'] },
-  // Add more mock items as needed
 ];
 
 const PantryPage = () => {
