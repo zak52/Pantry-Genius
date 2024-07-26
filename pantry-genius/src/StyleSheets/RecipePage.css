@@ -126,14 +126,17 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-bottom: 110px;
+    overflow-y: scroll;
+    max-height: 410px;
 }
 
 .recipe-card {
+    position: relative; /* Positioning context for overlay */
     background-color: white;
     border-radius: 10px;
     overflow: hidden;
     width: 45%;
+    height: auto;
     margin: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -146,6 +149,7 @@ body {
 
 .recipe-details {
     padding: 10px;
+    margin-top: -10px;
 }
 
 .recipe-name {
@@ -155,6 +159,23 @@ body {
 }
 
 .recipe-time {
+    position: absolute;
+    bottom: 50px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
     font-size: 14px;
-    color: #777;
+}
+
+.recipe-tag {
+    position: absolute;
+    bottom: 50px; 
+    left: 10px; 
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 14px;
 }
