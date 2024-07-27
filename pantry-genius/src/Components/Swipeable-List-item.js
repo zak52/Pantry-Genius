@@ -58,11 +58,14 @@ function Swipeablelistitem({ itemName, onLeft, onRight }) {
 
   function handleMouseMove(e) {
     if (startX !== null) {
-      const currentX = e.clientX;
-      const deltaX = currentX - startX;
-      const deltaXPercentage = (deltaX / widthRoot) * 100;
-      const limitedTranslateX = Math.min(Math.max(deltaXPercentage, -25), 25);
-    }
+        const currentX = e.clientX;
+        const deltaX = currentX - startX;
+        const deltaXPercentage = (deltaX / widthRoot) * 100;
+  
+        setTranslateX(deltaXPercentage);
+        const limitedTranslateX = Math.min(Math.max(deltaXPercentage, -25), 25);
+        setTranslateX(limitedTranslateX);
+      }
   }
 
   function handleMouseUp() {

@@ -3,6 +3,7 @@ import { FaSearch, FaPlus } from 'react-icons/fa';
 import AppLogo from '../Assets/Logo.svg';
 import '../StyleSheets/ShoppingListPage.css';
 import Swipeablelistitem from '../Components/Swipeable-List-item';
+import Modal from '../Components/ShoppingListModal';
 
 const ShoppingListPage = () => {
   const [items, setItems] = useState([
@@ -11,15 +12,30 @@ const ShoppingListPage = () => {
     // Add more items as needed
   ]);
 
+  const [showModal, setShowModal] = useState(false);
+
   const addItemToPantry = (itemId) => {
-    setItems(items.map(item => 
-      item.id === itemId ? { ...item, inPantry: true } : item
-    ));
+    setShowModal(true);
+    // Add logic to update the item in the pantry or show modal options
   };
 
   const deleteItemFromList = (itemId) => {
     setItems(items.filter(item => item.id !== itemId));
   };
+
+  const handleAddManually = () => {
+    console.log("Adding manually");
+    // Logic to add item manually
+    setShowModal(false);
+  };
+
+  const handleScanItem = () => {
+    console.log("Scanning item");
+    // Logic to scan item
+    setShowModal(false);
+  };
+
+
 
   return (
     <div className="shopping-list-page">
@@ -48,6 +64,16 @@ const ShoppingListPage = () => {
           </div>
         ))}
       </div>
+      {showModal && (
+        <Modal>
+          <div className="modal-content">
+            <h2>Add Item to Pantry</h2>
+            <button onClick={handleAddManually}>Add Manually</button>
+            <button onClick={handleScanItem}>Scan Item</button>
+            <button onClick={() => setShowModal(false)}>Cancel</button>
+          </div>
+        </Modal>
+      )}
     </div>
   );
 };
