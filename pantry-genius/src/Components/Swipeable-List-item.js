@@ -3,7 +3,7 @@ import "../StyleSheets/Swipeablelistitem.css";
 import { faCheck, faTrash } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-function Swipeablelistitem({ itemName }) {
+function Swipeablelistitem({ itemName, onLeft, onRight }) {
   const [startX, setStartX] = useState(null);
   const [widthRoot, setWidthRoot] = useState(0);
   const [translateX, setTranslateX] = useState(0);
@@ -13,8 +13,7 @@ function Swipeablelistitem({ itemName }) {
     function handleResize() {
       if (itemRef.current) {
         const itemRefRect = itemRef.current.getBoundingClientRect();
-        const { width } = itemRefRect;
-        setWidthRoot(width);
+        setWidthRoot(itemRefRect.width);
       }
     }
 
@@ -36,16 +35,17 @@ function Swipeablelistitem({ itemName }) {
       const deltaX = currentX - startX;
       const deltaXPercentage = (deltaX / widthRoot) * 100;
 
+      setTranslateX(deltaXPercentage);
       const limitedTranslateX = Math.min(Math.max(deltaXPercentage, -25), 25);
       setTranslateX(limitedTranslateX);
     }
   }
 
   function handleTouchEnd() {
-    if (translateX < -20) {
-      console.log("Delete action triggered");
-    } else if (translateX > 20) {
-      console.log("Check action triggered");
+    if (translateX <= -25 && onLeft) {
+        onLeft();
+    } else if (translateX >= 25 && onRight) {
+        onRight();
     }
 
     setStartX(null);
@@ -61,17 +61,15 @@ function Swipeablelistitem({ itemName }) {
       const currentX = e.clientX;
       const deltaX = currentX - startX;
       const deltaXPercentage = (deltaX / widthRoot) * 100;
-
       const limitedTranslateX = Math.min(Math.max(deltaXPercentage, -25), 25);
-      setTranslateX(limitedTranslateX);
     }
   }
 
   function handleMouseUp() {
-    if (translateX < -20) {
-      console.log("Delete action triggered");
-    } else if (translateX > 20) {
-      console.log("Check action triggered");
+    if (translateX <= -25 && onLeft) {
+        onLeft();
+    } else if (translateX >= 25 && onRight) {
+        onRight();
     }
 
     setStartX(null);
